@@ -297,6 +297,7 @@ function getPerfColor(perf) {
 }
 
 function calculatePerformance() {
+    if (!contest_type || contest_type !== 'ICPC') return;
     const table = document.querySelector('table');
     if (!table) return;
 
