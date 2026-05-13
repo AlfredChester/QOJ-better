@@ -618,7 +618,7 @@ function calculatePerformance() {
             }
         }
 
-        if (solved) {
+        if (solved && row[2][2] != 1 && row[2][2] != 2) { // 跳过 vp 队伍和未正式参赛队伍
             teamsWithSolvesCount++;
             validUserIds.push(userId);
         }
